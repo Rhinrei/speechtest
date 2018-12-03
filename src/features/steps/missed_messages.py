@@ -31,7 +31,6 @@ def when_it_is_not_evening(context):
 
 @when("assistant is working")
 def assistant_logic(context):
-    print(context)
     if len(context.missed_messages) > 0:
         if context.user_is_home:
             if context.it_is_evening:
